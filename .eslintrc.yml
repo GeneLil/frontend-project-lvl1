@@ -11,8 +11,6 @@ parser: babel-eslint
 
 extends:
   - 'airbnb-base'
-- name: ESLint Action
-  uses: hallee/eslint-action@1.0.1
 
 rules:
   semi: 0

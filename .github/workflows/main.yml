@@ -1,10 +1,18 @@
 name: Main
 
-on: [push]
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
+    
     runs-on: ubuntu-latest
     steps:
+      - name: npm install, build
+        run: |
+          make install
+          make build
       - name: Run ESLint
-        run: make lint
+        run: |
+          make lint
