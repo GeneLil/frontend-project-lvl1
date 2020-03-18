@@ -8,5 +8,3 @@ jobs:
     steps:
       - name: Run ESLint
         run: make lint
-        paths:
-          - '../../src/*'
