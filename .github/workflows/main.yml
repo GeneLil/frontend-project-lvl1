@@ -3,7 +3,6 @@ name: Main
 on: [push]
 
 jobs:
-  name: Run linter
   runs-on: ubuntu-latest
   steps:
     - name: Run ESLint
