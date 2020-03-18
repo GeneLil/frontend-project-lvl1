@@ -1,0 +1,21 @@
+plugins:
+  # https://github.com/babel/eslint-plugin-babel
+  - babel
+
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
+env:
+  node: true
+
+# https://github.com/babel/babel-eslint
+parser: babel-eslint
+
+extends:
+  - 'airbnb-base'
+- name: ESLint Action
+  uses: hallee/eslint-action@1.0.1
+
+rules:
+  semi: 0
+  quotes: off
+  no-console: 0
+  import/prefer-default-export: 0

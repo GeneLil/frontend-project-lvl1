@@ -1,3 +1,4 @@
 #!/usr/bin/env node
+import { beginGame } from ".."
 
-console.log("Welcome to the Brain Games!");
+beginGame()

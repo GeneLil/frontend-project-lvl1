@@ -1,0 +1,13 @@
+name: Main
+
+on: [push]
+
+jobs:
+  name: Run linter
+  runs-on: ubuntu-latest
+  steps:
+    - name: Run ESLint
+      uses: stefanoeb/eslint-action@1.0.2
+      run: make lint
+      with:
+        files: ../../src/
